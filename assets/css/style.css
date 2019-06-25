@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    line-height: 1.2em;
+    font-size: 16 px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+
+
+.container {
+    border: 2px solid #ffffff;
+    outline: 2px solid #666666;
+    margin: 20px;
+    background-color: #28278c;
+    color: white;
+    margin: auto;
+  }
+
+  .wins {
+      clear: both;
+      border: 2px solid #ffffff;
+      outline: 2px solid #666666;
+  }
+
+  .start {
+    border: 2px solid #ffffff;
+    outline: 2px solid #666666;
+    padding: 20px;
+  }
+
+  .gameblock {
+    border: 2px solid #ffffff;
+    outline: 2px solid #666666;
+  }
+
+  .gameblock p, h3 {
+      padding: 20px;
+      margin: 0;
+  }
+
+  img {
+      width: 125px;
+      height: 125px;
+  }
+
+  .sprites p {
+    font-size: 12px;
+    line-height: 1.2em;
+    padding: 0;
+  }
+
+  .sprites {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .gil {
+    display: none;
+    position:absolute;
+    bottom:0;
+    border: 2px solid #ffffff;
+    outline: 2px solid #666666;
+    width: 100%;
+  }

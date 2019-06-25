@@ -1,31 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/reset.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/reset.css'>
 </head>
+
 <body>
-    <h1>Hang-Man</h1>
-    <h2>Blank Theme</h2>
+
+    <div class="container">
+
+        <div class="row start">
+            <h3>Press Enter to Get Started!</h3>
+        </div>
 
 
-    <h3>Press Any Key to Get Started!</h3>
-    <h3>Wins</h3>
-    <p id="WinResult"></p>
+        <div class="row">
+            <div class="col-md-8 sprites">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/paladin.png">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Paladin</p>
+                        <p>Level 70</p>
+                        <p>HP: 8512/8512</p>
+                        <p>MP: 6000/6000</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/white mage.png">
+                    </div>
+                    <div class="col-md-4">
+                        <p>White Mage</p>
+                        <p>Level 70</p>
+                        <p>HP: 5934/5934</p>
+                        <p>MP: 8051/8051</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/summoner.png">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Summoner</p>
+                        <p>Level 70</p>
+                        <p>HP: 6128/6128</p>
+                        <p>MP: 8254/8254</p>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/images/monk.png">
+                </div>
+                <div class="col-md-4">
+                    <p>Monk</p>
+                    <p>Level 70</p>
+                    <p>HP: 6709/6709</p>
+                    <p>MP: 1000/1000</p>
+                </div>
+                </div>
+            </div>
 
-    <p id="dashes"></p>
-    <p id="UsedLetters"></p>
-    <p id="NumberTries"></p>
 
 
+            <div class="col-md-4 gameblock">
+
+
+                <div class="row wins">
+                    <h3>Wins</h3>
+                    <p id="WinResult"></p>
+                </div>
+
+                <div class="row">
+                    <p id="dashes" class="borders"></p>
+                </div>
+                <div class="row">
+                    <p id="UsedLetters" class="borders">Used Letters: </p>
+                </div>
+                <div class="row">
+                    <p id="NumberTries" class="borders">Number of Tries: 10</p>
+                </div>
+                <div class="row gil ">
+                    <p>Gil: 1,304,023</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
 
 
     <script src="assets/javascript/game.js"></script>
-    
+
 </body>
+
 </html>
