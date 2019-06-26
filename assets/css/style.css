@@ -1,19 +1,26 @@
 body {
     background-color: black;
     line-height: 1.2em;
-    font-size: 16 px;
+    font-size: 16px;
     font-family: 'Press Start 2P', cursive;
     padding: 30px;
 }
 
+h1 {
+    font-size: 28px;
+    padding: 10px;
+}
+
 h3 {
-    font-size: 24px;
+    font-size: 18px;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
-
+.blank {
+    color: #28278c;
+}
 
 .container {
     border: 2px solid #ffffff;
@@ -33,10 +40,11 @@ h3 {
   .start {
     border: 2px solid #ffffff;
     outline: 2px solid #666666;
-    padding: 20px;
+    padding: 10px;
   }
 
   .gameblock {
+    position: relative;
     border: 2px solid #ffffff;
     outline: 2px solid #666666;
   }
@@ -52,6 +60,7 @@ h3 {
   }
 
   .sprites p {
+    margin-top: 10px;
     font-size: 12px;
     line-height: 1.2em;
     padding: 0;
@@ -61,12 +70,6 @@ h3 {
       margin-top: 10px;
       margin-bottom: 10px;
   }
-  
-  .gil {
-    display: none;
-    position:absolute;
-    bottom:0;
-    border: 2px solid #ffffff;
-    outline: 2px solid #666666;
-    width: 100%;
-  }
+
+
+
