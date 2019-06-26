@@ -1,5 +1,5 @@
 var validGuess = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var wordList = ["chocobo", "materia", "bahamut", "crystal", "summoner", "ifrit", "shiva", "cure", "dragoon", "cid", "biggs", "wedge", ]
+var wordList = ["chocobo", "materia", "bahamut", "crystal", "summoner", "ifrit", "shiva", "cure", "dragoon", "cid", "biggs", "wedge", "map", "fantasy", "paladin", "princess", "castle"]
 var answerList = [];
 var UsedLetter = [];
 var userAttempts = 7;
@@ -15,6 +15,7 @@ function start() {
                 game()
             
             }
+            
         }
 }
 
@@ -103,11 +104,13 @@ function game() {
             //brings code back to start to await enter input      
 
         if (UsedLetter.length > userAttempts - 1) {
-
+            UsedLetter = [];
             document.getElementById("dashes").innerHTML = "Game over!";
+            document.getElementById("NumberTries").innerHTML = "Number of tries: 7"
+            document.getElementById("UsedLetters").innerHTML = "Used Letters: " + UsedLetter;
             console.log(gameOver)
             gameOver === !false;
-            UsedLetter = [];
+
             start()
 
         }
@@ -118,11 +121,14 @@ function game() {
 
         if (answerList.indexOf("_") === -1) {
             Score += 1; 
+            UsedLetter = [];
             console.log("You win!")
             document.getElementById("dashes").innerHTML = "You Win! Press enter to Play again!";
+            document.getElementById("NumberTries").innerHTML = "Number of tries: 7"
+            document.getElementById("UsedLetters").innerHTML = "Used Letters: " + UsedLetter;
             document.getElementById("WinResult").innerHTML = Score;
             gameOver === !false;
-            UsedLetter = [];
+
             start()
             
         }
